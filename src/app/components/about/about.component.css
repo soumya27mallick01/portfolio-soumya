@@ -1,0 +1,43 @@
+/* About Section */
+.about-container {
+    background-color: #f8f9fa;
+  }
+  
+  .about-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .about-container p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .about-container img {
+    border-radius: 10px;
+    max-height: 350px;
+    object-fit: cover;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background: #6a11cb;
+  }
+  
+  .btn-outline-primary {
+    border: 2px solid #6a11cb;
+    color: #6a11cb;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #6a11cb;
+    color: #fff;
+  }
+  

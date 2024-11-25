@@ -1,0 +1,26 @@
+.navbar .nav-link {
+    color: #6c757d;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar .nav-link.active {
+    color: #6a11cb; /* Highlight active link */
+    font-weight: bold;
+  }
+  
+  .navbar .nav-link.active[data-aos] {
+    animation: pulse-highlight 0.8s ease-out;
+  }
+  
+  @keyframes pulse-highlight {
+    0% {
+      text-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(106, 17, 203, 0.8);
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
+    }
+  }
+  

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-about',
@@ -8,8 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit{
 
   ngOnInit(): void {
-    console.log("about");
-    
+    AOS.init(); // Initialize AOS animations
   }
 
 }

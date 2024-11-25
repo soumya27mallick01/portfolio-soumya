@@ -1,44 +1,105 @@
-<div class="home-container">
+<div class="home-container" id="home" data-aos="fade-up" class="section-wrapper">
   <!-- Hero Section -->
-  <div class="hero-section text-center text-white d-flex flex-column justify-content-center align-items-center">
-    <h1 class="display-4" data-aos="fade-down">Welcome to My Portfolio</h1>
-    <p class="lead" data-aos="fade-up" data-aos-delay="200">
-      Discover my skills, projects, and how to contact me.
-    </p>
-    <a routerLink="/portfolio-website/projects" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in" data-aos-delay="400">
-      View My Projects
-    </a>
-  </div>
+  <section class="hero-section text-center text-white d-flex align-items-center">
+    <div class="container">
+      <h1 class="display-4" data-aos="fade-up">Welcome to My Portfolio</h1>
+      <p class="lead mt-3" data-aos="fade-up" data-aos-delay="200">
+        Showcasing my work, skills, and projects to help you discover what I can do.
+      </p>
+      <button routerLink="/portfolio-website/projects" class="btn btn-primary btn-lg mt-4" data-aos="zoom-in" data-aos-delay="400">
+        View My Projects
+      </button>
+    </div>
+  </section>
 
   <!-- About Section -->
-  <div class="about-section container my-5" data-aos="fade-right">
-    <h2>About Me</h2>
-    <p>
-      Hi, I'm a passionate web developer with expertise in Angular, Bootstrap, and more.
-      I love creating visually stunning, user-friendly, and efficient websites.
-    </p>
-    <a routerLink="/portfolio-website/contact" class="btn btn-outline-primary">Get in Touch</a>
-  </div>
-
-  <!-- Skills Section -->
-  <div class="skills-section container my-5">
-    <h2 class="text-center" data-aos="fade-up">Skills</h2>
-    <div class="row text-center">
-      <div class="col-md-4" data-aos="flip-left">
-        <i class="bi bi-code-slash text-primary display-4"></i>
-        <h5>Frontend Development</h5>
-        <p>HTML, CSS, JavaScript, Angular, React</p>
-      </div>
-      <div class="col-md-4" data-aos="flip-up" data-aos-delay="200">
-        <i class="bi bi-server text-success display-4"></i>
-        <h5>Backend Development</h5>
-        <p>Node.js, Express, MongoDB</p>
-      </div>
-      <div class="col-md-4" data-aos="flip-right" data-aos-delay="400">
-        <i class="bi bi-phone text-warning display-4"></i>
-        <h5>Responsive Design</h5>
-        <p>Bootstrap, Flexbox, CSS Grid</p>
+  <section class="about-section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-down">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <img
+            src="assets/images/developer.jpg"
+            alt="About Me"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <p>
+            I'm a passionate developer specializing in building interactive, responsive, and user-friendly web applications. With a strong foundation in modern web technologies, I bring ideas to life and help solve real-world problems with innovative solutions.
+          </p>
+          <button routerLink="/portfolio-website/contact" class="btn btn-outline-primary mt-3">
+            Get in Touch
+          </button>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Automated Carousel Section -->
+  <section class="carousel-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-down">What I Do</h2>
+      <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="text-center">
+              <h3>Web Development</h3>
+              <p>
+                Building modern, responsive, and high-performance web applications tailored to client needs.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <h3>UI/UX Design</h3>
+              <p>
+                Crafting intuitive user interfaces and ensuring a seamless user experience.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <h3>Problem Solving</h3>
+              <p>
+                Tackling complex technical challenges and delivering scalable solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="highlights-section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-down">Why Choose Me?</h2>
+      <div class="row">
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-laptop fs-1 text-primary"></i>
+          <h4 class="mt-3">Responsive Design</h4>
+          <p>Ensuring your website looks great on all devices, from desktops to mobiles.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-code-slash fs-1 text-primary"></i>
+          <h4 class="mt-3">Clean Code</h4>
+          <p>Writing clean, efficient, and maintainable code for long-term success.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-speedometer2 fs-1 text-primary"></i>
+          <h4 class="mt-3">Fast Performance</h4>
+          <p>Optimizing websites for speed and delivering a seamless user experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
