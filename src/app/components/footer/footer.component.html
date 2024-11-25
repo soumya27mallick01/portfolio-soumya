@@ -1,1 +1,45 @@
-<p>footer works!</p>
+<footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-4 mb-3" data-aos="fade-up">
+          <h5>About Me</h5>
+          <p>
+            I'm a passionate web developer specializing in creating responsive and dynamic web applications. Let's build something amazing together!
+          </p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a routerLink="/portfolio-website/home" class="text-white text-decoration-none">Home</a></li>
+            <li><a routerLink="/portfolio-website/projects" class="text-white text-decoration-none">Projects</a></li>
+            <li><a routerLink="/portfolio-website/contact" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Social Links -->
+        <div class="col-md-4 mb-3 text-center" data-aos="fade-up" data-aos-delay="400">
+          <h5>Follow Me</h5>
+          <a href="https://github.com" target="_blank" class="text-white me-3">
+            <i class="bi bi-github display-6"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="text-white me-3">
+            <i class="bi bi-linkedin display-6"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="text-white">
+            <i class="bi bi-twitter display-6"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Footer Bottom -->
+      <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="600">
+        <p class="mb-0">
+          &copy; {{ currentYear }} My Portfolio. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  

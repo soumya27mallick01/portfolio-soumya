@@ -10,6 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,9 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   providers: [
     provideClientHydration()
+    ,{provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
+  // providers: [DatePipe,{ provide: MAT_DATE_LOCALE, useValue: 'en-IN' },{provide: LocationStrategy, useClass: HashLocationStrategy},DecimalPipe],
   bootstrap: [AppComponent,]
 })
 export class AppModule { }

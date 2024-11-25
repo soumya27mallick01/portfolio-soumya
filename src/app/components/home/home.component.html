@@ -1,5 +1,44 @@
-<div class="container text-center my-5" data-aos="fade-up">
-   <h1>Welcome to My Portfolio</h1>
-   <p>Explore my work and get to know me better.</p>
- </div>
- 
+<div class="home-container">
+  <!-- Hero Section -->
+  <div class="hero-section text-center text-white d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-4" data-aos="fade-down">Welcome to My Portfolio</h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="200">
+      Discover my skills, projects, and how to contact me.
+    </p>
+    <a routerLink="/portfolio-website/projects" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in" data-aos-delay="400">
+      View My Projects
+    </a>
+  </div>
+
+  <!-- About Section -->
+  <div class="about-section container my-5" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm a passionate web developer with expertise in Angular, Bootstrap, and more.
+      I love creating visually stunning, user-friendly, and efficient websites.
+    </p>
+    <a routerLink="/portfolio-website/contact" class="btn btn-outline-primary">Get in Touch</a>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="skills-section container my-5">
+    <h2 class="text-center" data-aos="fade-up">Skills</h2>
+    <div class="row text-center">
+      <div class="col-md-4" data-aos="flip-left">
+        <i class="bi bi-code-slash text-primary display-4"></i>
+        <h5>Frontend Development</h5>
+        <p>HTML, CSS, JavaScript, Angular, React</p>
+      </div>
+      <div class="col-md-4" data-aos="flip-up" data-aos-delay="200">
+        <i class="bi bi-server text-success display-4"></i>
+        <h5>Backend Development</h5>
+        <p>Node.js, Express, MongoDB</p>
+      </div>
+      <div class="col-md-4" data-aos="flip-right" data-aos-delay="400">
+        <i class="bi bi-phone text-warning display-4"></i>
+        <h5>Responsive Design</h5>
+        <p>Bootstrap, Flexbox, CSS Grid</p>
+      </div>
+    </div>
+  </div>
+</div>
