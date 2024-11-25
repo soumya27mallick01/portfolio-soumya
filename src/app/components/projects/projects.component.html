@@ -1,1 +1,24 @@
-<p>projects works!</p>
+<div class="project-container py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-down">My Projects</h2>
+      <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+        Here are some of the projects I've worked on. Click on each project to learn more.
+      </p>
+      <div class="row">
+        <!-- Project Card -->
+        <div class="col-md-4 mb-4" *ngFor="let project of projects" data-aos="zoom-in" [attr.data-aos-delay]="project.aosDelay">
+          <div class="card h-100 shadow-sm">
+            <img [src]="project.image" class="card-img-top" [alt]="project.title" />
+            <div class="card-body">
+              <h5 class="card-title">{{ project.title }}</h5>
+              <p class="card-text">{{ project.description }}</p>
+              <a [href]="project.link" target="_blank" class="btn btn-primary">
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

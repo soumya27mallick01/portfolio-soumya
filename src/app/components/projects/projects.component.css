@@ -1,0 +1,53 @@
+/* Project Section */
+.project-container {
+    background-color: #f8f9fa;
+  }
+  
+  .project-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #343a40;
+  }
+  
+  .project-container p {
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+  
+  .btn-primary {
+    background-color: #6a11cb;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2575fc;
+  }
+  

@@ -8,8 +8,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  // { path : '', component : HomeComponent},
+  // {path: '', redirectTo: '/portfolio-website/home', pathMatch: 'full'},
+  { path : '', component : HomeComponent},
   { path : 'home', component : HomeComponent},
   { path : 'navbar', component : NavbarComponent},
   { path : 'about', component : AboutComponent},
